@@ -1,0 +1,62 @@
+{% extends "layout.html"%}
+{% block main %}
+        <div class="hero" id="hero">
+            <div class="hero-wrapper">
+                <div class="logo-wrapper">
+                    <h3 class="left"><span>March 5th - 6th, 2020</span></h3>
+                    <div><img src="{{url_for('static', filename='dist/img/cogito-logo-white.svg')}}" alt="Cogito Logo"></div>            
+                    <h3 class="right"><span>Jeppiaar Engineering College</span></h3>
+                </div>
+                <h2 class="cogito-slogan">One's existence is demonstrated by the fact that One thinks</h2>
+                <a href="#" class="waves-effect waves-light register-btn ">Register</a>                
+            </div>
+        </div>
+        <div class="about">
+            <div class="about-wrapper container-90">
+                <h1 class="bold">About</h1> 
+                <div class="about-content">
+                    <div style="margin: auto;"><img class="responsive-img" src="/static/dist/img/cogito-logo-mark.svg" alt="Cogito Logo"></div>
+                    <div class="about-para">
+                    <p>Cogito is a <span>two day</span> annual tech fest  brought to you by the <span>CSI Student Branch</span> of Jeppiaar Engineering College.</p>
+                    <p>Cogito is a destination to <span>celebrate</span>,<span>learn</span> and <span>swoon</span> about tech</p>
+                    <p> Cogito | 20 is the <span>4th edition</span> of Cogito and  we are very pumped to bring it to every  geek other there. Better than ever before.</p>                     
+                    </div> 
+                </div>
+            </div>        
+        </div>
+        <div class="events">
+            <div class="events-wrapper">
+                <div class="container-90">
+                    <h1 class="bold cogi-color">Events</h1>
+                    <p class="ptb-16">Compete with the best of the best in the domain of your preference</p>
+                    <div class="row">                        
+                        <div class="col s6 l2 offset-l4">
+                            <a href="{{url_for('techEvents')}}"><img class="responsive-img" src="{{url_for('static', filename='dist/img/technical-event-symbol.svg')}}" alt="Technical Events" ></a>                                                              
+                        </div>
+                        <div class="col s6 l2">
+                            <a href="{{url_for('nonTechEvents')}}"><img class="responsive-img" src="{{url_for('static', filename='dist/img/non-technical-event-symbol.svg')}}" alt="Non Technical Events" ></a>                                
+                        </div>                  
+                    </div>
+                </div>
+                <div class="event-list">
+                       
+                </div>  
+            </div>          
+        </div>
+
+        <div class="workshops">
+            <div class="workshops-wrapper container-90">
+                <h1 class="bold cogi-color">Workshops</h1>
+                <p class="ptb-16">Compete with the best of the best in the domain of your preference</p>                
+                <div class="row">                        
+                    <div class="col s6 l2">
+                        <a href="{{url_for('techEvents')}}"><img class="responsive-img" src="{{url_for('static', filename='dist/workshop-posters/GDG-Workshop-poster.png')}}" alt="Technical Events" ></a>                                                              
+                    </div>
+                    <div class="col s6 l2">
+                        <a href="{{url_for('nonTechEvents')}}"><img class="responsive-img" src="{{url_for('static', filename='dist/workshop-posters/GDG-Workshop-poster.png')}}" alt="Non Technical Events" ></a>                                
+                    </div>                  
+                </div>
+            </div>
+        </div>
+{% endblock main %}   
+   

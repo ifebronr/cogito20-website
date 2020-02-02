@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection"/>
+     
+    {% if title %}
+        <title>Cogito | {{title}}</title>
+    {% else %}
+        <title>Cogito | JEC CSI's TechFest</title>
+    {% endif %}
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <!--Cogito_Styles-->   
+    <link rel="stylesheet" href="{{url_for('static', filename='dist/css/main.css')}}">
+   
+ </head>
+<body>
+    <!--Navigation Bar / Header-->
+    <header class="cd-header">
+        <div class="header-wrapper">
+            <div class="logo-wrap">
+                <a href="{{url_for('home')}}"><img src="{{url_for('static', filename='dist/img/cogito-heading-white.svg')}}" alt="Cogito 20 Logo"></a>
+            </div>           
+            <div class="nav-but-wrap">         
+                <div class="menu-icon hover-target">
+                    <span class="menu-icon__line menu-icon__line-left"></span>
+                    <span class="menu-icon__line"></span>
+                    <span class="menu-icon__line menu-icon__line-right"></span>
+                </div>					
+            </div>					
+        </div>
+        <div class="nav"> 
+            <div class="nav__content">
+                <ul class="nav__list">
+                    <li class="nav__list-item active-nav"><a href="/home" class="hover-target">Home</a></li>
+                    <li class="nav__list-item"><a href="" class="hover-target">Register</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Events</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Contact Us</a></li>
+                    <li class="nav__list-item"><a href="/team" class="hover-target">Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>   
+    <!--Header End-->
+
+
+
+    <!--Main Section--> 
+    <main>{% block main %}  
+        {% endblock main %}  
+    </main>
+
+    <!--Footer Section-->
+    <footer class="page-footer black ">        
+        <div class="row  container-90 section">
+          <div class="col l2 m3 s6">
+           <a href="{{url_for('home')}}"><img class="responsive-img" src="{{url_for('static', filename='dist/img/cogito-logo-mark.svg')}}" alt="Cogito Logo"></a> 
+          </div>
+          <div class="col l2 offset-l1 s12">
+            <h5 class="yellow-text mont-bold ptb-16">Follow Us</h5>
+            <ul class="padding-4">
+              <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="col l2 s6 section">
+              <h5 class="yellow-text mont-bold ptb-16">Sitemap</h5>
+              <ul class="padding-4">
+                <li class=""><a class="grey-text text-lighten-3 " href="{{url_for('home')}}">Home</a></li>
+                <li><a class="grey-text text-lighten-3 " href="#!">About</a></li>
+                <li><a class="grey-text text-lighten-3 " href="#!">Register</a></li>
+                <li><a class="grey-text text-lighten-3 " href="#!">Events</a></li>
+                <li><a class="grey-text text-lighten-3 " href="#!">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col l2 s6 section">
+              <h5 class="black-text ptb-16">Sitemap</h5>
+              <ul class=" padding-4">
+                <li><a class="grey-text text-lighten-3" href="{{url_for('schedule')}}">Schedule</a></li>
+                <li><a class="grey-text text-lighten-3" href="/team">Team</a></li>
+              </ul>
+            </div>                   
+      </div>
+      <!--Footer End-->
+      <div class="footer-copyright gray " style="display: block;">
+          <div class="center-align" ><h6 class="text-tiny">Designed with <i class="material-icons cogi-yellow text-tiny">favorite</i> by <a class="grey-text text-lighten-4" href="">@ifebronr</a> © 2020</h6></div>             
+      </div>
+    </footer>
+    <!--Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="{{url_for('static', filename='js/particles.min.js')}}"></script>
+    <script >particlesJS.load("hero", "{{url_for('static', filename='js/particles.json')}}", function() {
+        console.log('callback - particles.js config loaded');
+      });</script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>  
+</body>
+</html>
