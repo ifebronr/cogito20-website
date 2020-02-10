@@ -22,19 +22,20 @@
                     <p> Cogito | 20 is the <span>4th edition</span> of Cogito and  we are very pumped to bring it to every  geek other there. Better than ever before.</p>                     
                     </div> 
                 </div>
-            </div>        
+            </div>  
+                  
         </div>
-        <div class="events">
+        <div class="events" id="events">
             <div class="events-wrapper">
                 <div class="container-90">
                     <h1 class="bold cogi-color">Events</h1>
                     <p class="ptb-16">Compete with the best of the best in the domain of your preference</p>
                     <div class="row">                        
-                        <div class="col s6 l2 offset-l4">
-                            <a href="{{url_for('techEvents')}}"><img class="responsive-img" src="{{url_for('static', filename='dist/img/technical-event-symbol.svg')}}" alt="Technical Events" ></a>                                                              
+                        <div class="col s6 l3 offset-l3">
+                            <a href="{{url_for('techEvents')}}"><img class="responsive-img" src="{{url_for('static', filename='dist/img/technical-event-symbol.png')}}" alt="Technical Events" ></a>                                                              
                         </div>
-                        <div class="col s6 l2">
-                            <a href="{{url_for('nonTechEvents')}}"><img class="responsive-img" src="{{url_for('static', filename='dist/img/non-technical-event-symbol.svg')}}" alt="Non Technical Events" ></a>                                
+                        <div class="col s6 l3 ">
+                            <a href="{{url_for('nonTechEvents')}}"><img class="responsive-img" src="{{url_for('static', filename='dist/img/non-technical-event-symbol.png')}}" alt="Non Technical Events" ></a>                                
                         </div>                  
                     </div>
                 </div>
@@ -44,17 +45,17 @@
             </div>          
         </div>
 
-        <div class="workshops">
+        <div class="workshops" id="workshops">
             <div class="workshops-wrapper container-90">
                 <h1 class="bold cogi-color">Workshops</h1>
-                <p class="ptb-16">Compete with the best of the best in the domain of your preference</p>                
-                <div class="row">                        
-                    <div class="col s6 l2">
-                        <a href="{{url_for('techEvents')}}"><img class="responsive-img" src="{{url_for('static', filename='dist/workshop-posters/GDG-Workshop-poster.png')}}" alt="Technical Events" ></a>                                                              
-                    </div>
-                    <div class="col s6 l2">
-                        <a href="{{url_for('nonTechEvents')}}"><img class="responsive-img" src="{{url_for('static', filename='dist/workshop-posters/GDG-Workshop-poster.png')}}" alt="Non Technical Events" ></a>                                
-                    </div>                  
+                <p class="ptb-16">"Intellectual growth should commence at birth and cease only at death. ― Albert Einstein". Come attend Cogito Workshops get hands-on with latest domain with our expert instructors </p>                
+                <div class="row"> 
+                    <div class="col s6 l3">
+                        <a href="{{url_for('uiUxDesign')}}"><img class="responsive-img" src="{{url_for('static', filename='dist/workshop-posters/UX-UI-Workshop.png')}}" alt="UI & UX Workshop" ></a>                                
+                    </div>                             
+                    <div class="col s6 l3">
+                        <a href="{{url_for('tensorWorkshop')}}"><img class="responsive-img" src="{{url_for('static', filename='dist/workshop-posters/GDG-Workshop-poster.png')}}" alt="Introduction to Machine Learning using Tensorflow" ></a>                                                              
+                    </div>                               
                 </div>
             </div>
         </div>

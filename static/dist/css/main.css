@@ -5,6 +5,7 @@
           box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,8 +21,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-70 {
-  width: 70%;
+  width: 90%;
   margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container-70 {
+    width: 70%;
+    margin: auto;
+  }
 }
 
 .responsive-img {
@@ -51,6 +59,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .ptb-16 {
   padding: 16px 0;
+}
+
+.mtb-2rem {
+  margin: 2rem 0;
 }
 
 a {
@@ -323,7 +335,7 @@ a:hover {
 
 .cd-header.nav-active .nav:before {
   width: 250px;
-  height: 350px;
+  height: 450px;
   border-radius: 15px;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
@@ -411,19 +423,19 @@ a:hover {
   overflow-y: hidden;
 }
 
+.register-btn {
+  color: #E6FF00;
+  border: 2px solid #E6FF00;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+}
+
 .hero-wrapper {
   width: 100%;
   position: absolute;
   top: 20%;
   text-align: center;
   padding: 20px;
-}
-
-.hero-wrapper .register-btn {
-  color: #E6FF00;
-  border: 2px solid #E6FF00;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
 }
 
 .hero-wrapper .logo-wrapper {
@@ -547,7 +559,6 @@ a:hover {
 }
 
 .workshops {
-  text-align: center;
   color: #fff;
   background-color: #212121;
 }
@@ -559,7 +570,79 @@ a:hover {
 
 /* Schedules */
 .schedules {
+  background-color: #212121;
+  text-align: center;
+  height: 100%;
+}
+
+.schedules__wrapper {
+  color: #fff;
+  margin: 20vh auto;
+}
+
+.schedules iframe {
+  margin: 4rem auto;
+  width: 100%;
   height: 100vh;
-  background-color: black;
+}
+
+.schedules a {
+  color: #E6FF00;
+}
+
+/* Description Page */
+.description {
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+.description__wrapper {
+  margin: 200px auto;
+}
+
+.description__wrapper h1 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.description__wrapper h3 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+@media (min-width: 1000px) {
+  .description__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .description__wrapper .ws__poster {
+    width: 50%;
+    margin: 0 2rem;
+  }
+  .description__wrapper .details {
+    width: 40vw;
+  }
+}
+
+/* Technical Events */
+.technical-events {
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+.technical-events__wrapper {
+  margin: 150px auto;
+  text-align: center;
+}
+
+.technical-events__wrapper h1 {
+  font-size: 3rem;
 }
 /*# sourceMappingURL=main.css.map */

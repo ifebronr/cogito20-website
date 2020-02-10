@@ -8,7 +8,7 @@
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!--Import materialize.css-->
      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection"/>
-     
+     <link rel = "icon" href = "{{url_for('static', filename='dist/img/cogito-bulb.png')}}"type = "image/x-icon">
     {% if title %}
         <title>Cogito | {{title}}</title>
     {% else %}
@@ -39,11 +39,12 @@
         <div class="nav"> 
             <div class="nav__content">
                 <ul class="nav__list">
-                    <li class="nav__list-item active-nav"><a href="/home" class="hover-target">Home</a></li>
+                    <li class="nav__list-item active-nav"><a href="{{url_for('home')}}" class="hover-target">Home</a></li>
                     <li class="nav__list-item"><a href="" class="hover-target">Register</a></li>
-                    <li class="nav__list-item"><a href="#" class="hover-target">Events</a></li>
+                    <li class="nav__list-item"><a href="#events" class="hover-target">Events</a></li>
                     <li class="nav__list-item"><a href="#" class="hover-target">Contact Us</a></li>
-                    <li class="nav__list-item"><a href="/team" class="hover-target">Team</a></li>
+                    <li class="nav__list-item"><a href="{{url_for('team')}}" class="hover-target">Team</a></li>
+                    <li class="nav__list-item"><a href="{{url_for('schedule')}}" class="hover-target">Schedule</a></li>
                 </ul>
             </div>
         </div>
@@ -66,16 +67,17 @@
           <div class="col l2 offset-l1 s12">
             <h5 class="yellow-text mont-bold ptb-16">Follow Us</h5>
             <ul class="padding-4">
-              <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/cogito_2020/" target="_blank">Instagram</a></li>
+              <li><a class="grey-text text-lighten-3" href="" target="_blank">Facebook</a></li>
             </ul>
           </div>
           <div class="col l2 s6 section">
               <h5 class="yellow-text mont-bold ptb-16">Sitemap</h5>
               <ul class="padding-4">
                 <li class=""><a class="grey-text text-lighten-3 " href="{{url_for('home')}}">Home</a></li>
-                <li><a class="grey-text text-lighten-3 " href="#!">About</a></li>
+                <li><a class="grey-text text-lighten-3 " href="#about">About</a></li>
                 <li><a class="grey-text text-lighten-3 " href="#!">Register</a></li>
-                <li><a class="grey-text text-lighten-3 " href="#!">Events</a></li>
+                <li><a class="grey-text text-lighten-3 " href="#events">Events</a></li>
                 <li><a class="grey-text text-lighten-3 " href="#!">Contact</a></li>
               </ul>
             </div>
@@ -83,7 +85,7 @@
               <h5 class="black-text ptb-16">Sitemap</h5>
               <ul class=" padding-4">
                 <li><a class="grey-text text-lighten-3" href="{{url_for('schedule')}}">Schedule</a></li>
-                <li><a class="grey-text text-lighten-3" href="/team">Team</a></li>
+                <li><a class="grey-text text-lighten-3" href="{{url_for('team')}}">Team</a></li>
               </ul>
             </div>                   
       </div>

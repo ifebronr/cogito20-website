@@ -1,0 +1,18 @@
+{% extends "layout.html"%}
+{% block main %}
+        <div class="technical-events">
+            <div class="technical-events__wrapper container-70">
+                    <h1 class="bold cogi-color">{{eventType}}</h1>   
+                    <div class="row">
+                <!--<img src="/static/dist/event-posters/Paper Presentation.jpg" alt="">-->
+                        {% for item in range(0,noOf)%}
+                        <div class="col s12 l4 mtb-2rem">
+                                <a href="{{url_for(events[item])}}"><img class="responsive-img" src="{{url_for('static', filename=psFile[item])}}" alt="{{events[item]}}" ></a>                                
+                        </div>
+                        {% endfor%}
+                        
+                    </div>        
+            </div>
+        </div>
+{% endblock main %}   
+   

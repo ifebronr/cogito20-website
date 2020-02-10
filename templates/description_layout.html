@@ -1,0 +1,42 @@
+{% extends "layout.html"%}
+{% block main %}
+        <div class="description">
+            <div class="description__wrapper container-70">
+                    <div class="ws__poster"><img src="{{url_for('static', filename=psFile)}}" alt="{{wsAlt}}" class="responsive-img"></div> 
+                    <div class="details">
+                        <h1>{{name}}</h1>
+                        {%if eventType == "WS"%}
+                        <h6>Date:   {{date}}</h6>
+                        <h6>Time:   {{time}}</h6>
+                        {%endif%}
+                        <h3>Description</h3>
+                        <p>{{description}}</p>
+                        {%if eventType == "WS"%}
+                        <h3>Requirements</h3>
+                        {%else%}
+                        <h3>Rules</h3>
+                        {%endif%}
+                        {{rule}}
+
+                        <ul>
+                            {% for rule in rules %}
+                                <li>{{rule}}</li>
+                            {% endfor%}
+                            
+                        </ul>
+                        <h3>Contact</h3>
+                        <ul>
+                            {% for contact in contacts %}
+                                <li>{{contact}}</li>
+                            {% endfor%}
+                            
+                        </ul>
+                        <a href="" class="waves-effect waves-light register-btn mtb-2rem">Click to Register</a>
+
+                    </div>
+                   
+                     
+            </div>
+        </div>
+{% endblock main %}   
+   
