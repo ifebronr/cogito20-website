@@ -524,7 +524,7 @@ def uiUxDesign():
 @app.route('/TensorflowWorkshop')
 def tensorWorkshop():
 
-    psFile = "dist/workshop-posters/GDG-Workshop-poster.png"
+    psFile = "dist/workshop-posters/GDG-Workshop-poster.jpg"
     wsAlt = "Introduction to Machine Learning with Tensorflow Workshop"
     name = "Introduction to Machine Learning with Tensorflow Workshop"
     date = "6th March ,2020"
