@@ -15,6 +15,25 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .ticket-btn {
   margin: 1rem 0;
   display: inline-block;
@@ -353,7 +372,7 @@ a:hover {
 
 .cd-header.nav-active .nav:before {
   width: 250px;
-  height: 450px;
+  height: 350px;
   border-radius: 15px;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
@@ -591,7 +610,7 @@ a:hover {
 
 @media (min-width: 1000px) {
   .ticket__about {
-    margin: 20% 0;
+    margin: 10% 0;
   }
 }
 
@@ -615,6 +634,15 @@ a:hover {
 .workshops-wrapper {
   margin: 2rem auto;
   height: 100%;
+}
+
+.contact__wrapper {
+  margin: 2rem auto;
+  height: 100%;
+}
+
+.contact__map {
+  margin: 2rem 0;
 }
 
 /* Schedules */

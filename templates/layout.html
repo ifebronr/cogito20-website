@@ -39,11 +39,9 @@
         <div class="nav"> 
             <div class="nav__content">
                 <ul class="nav__list">
-                    <li class="nav__list-item active-nav"><a href="{{url_for('home')}}" class="hover-target">Home</a></li>
-                    <li class="nav__list-item"><a href="" class="hover-target">Register</a></li>
-                    <li class="nav__list-item"><a href="#events" class="hover-target">Events</a></li>
-                    <li class="nav__list-item"><a href="#" class="hover-target">Contact Us</a></li>
-                    <li class="nav__list-item"><a href="{{url_for('team')}}" class="hover-target">Team</a></li>
+                    <li class="nav__list-item"><a href="/home#hero" class="hover-target">Home</a></li>
+                    <li class="nav__list-item"><a href="/home#ticket" class="hover-target">Buy Ticket</a></li>
+                    <li class="nav__list-item"><a href="/home#events" class="hover-target">Events</a></li>
                     <li class="nav__list-item"><a href="{{url_for('schedule')}}" class="hover-target">Schedule</a></li>
                 </ul>
             </div>
@@ -74,18 +72,18 @@
           <div class="col l2 s6 section">
               <h5 class="yellow-text mont-bold ptb-16">Sitemap</h5>
               <ul class="padding-4">
-                <li class=""><a class="grey-text text-lighten-3 " href="{{url_for('home')}}">Home</a></li>
-                <li><a class="grey-text text-lighten-3 " href="#about">About</a></li>
-                <li><a class="grey-text text-lighten-3 " href="#!">Register</a></li>
+                <li class=""><a class="grey-text text-lighten-3 " href="/home#hero">Home</a></li>
+                <li><a class="grey-text text-lighten-3 " href="/home#about">About</a></li>
+                <li><a class="grey-text text-lighten-3 " href="/home#ticket">Buy Ticket</a></li>
                 <li><a class="grey-text text-lighten-3 " href="{{url_for('home')}}">Events</a></li>
-                <li><a class="grey-text text-lighten-3 " href="#!">Sponsors</a></li>
+                <!--<li><a class="grey-text text-lighten-3 " href="#!">Sponsors</a></li>-->
               </ul>
             </div>
             <div class="col l2 s6 section">
               <h5 class="black-text ptb-16">Sitemap</h5>
               <ul class=" padding-4">
                 <li><a class="grey-text text-lighten-3" href="{{url_for('schedule')}}">Schedule</a></li>
-                <li><a class="grey-text text-lighten-3" href="{{url_for('team')}}">Team</a></li>
+                <!--<li><a class="grey-text text-lighten-3" href="{{url_for('team')}}">Team</a></li>-->
               </ul>
             </div>                   
       </div>

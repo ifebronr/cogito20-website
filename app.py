@@ -65,6 +65,8 @@ def paperPresenation():
               "> 	A participant should not submit more than two papers.",
               "> 	No participant can be a part of more than one team",
               "> 	There are no restrictions on the number of teams from same college."              
+              "> 	Last date to send ABSTRACT : 1st March , 2020",              
+              "> 	Send the ABSTRACT to cogito.jeccsi@gmail.com"             
             ]
     contacts = ["Rohini | +91 98406 68223", "Pooja priyadarshni | +91 98417 59321", "E.S.Vikashini sruthi | +91 96000 98232"]
     return render_template('description_layout.html',title = "Paper Presentation",
@@ -94,7 +96,9 @@ def projectExpo():
               "> 	Team members of a team should belong to the same institution.",
               "> 	The number of students per project shall not exceed five.",
               "> 	Entry fee for each model will be Rs 300/- payable by Cash or Online.Entry fee is not refundable.",
-              "> 	The decision given by judges in all matters will be final."
+              "> 	The decision given by judges in all matters will be final.",
+              "> 	Last date to send ABSTRACT : 1st March , 2020",              
+              "> 	Send the ABSTRACT to cogito.jeccsi@gmail.com"
             ]
     contacts = ["Shasanth | +91 96771 83202", "Deepak Sharran  | +91 74180 23612", "Manoj Kumar | +91 73585 17185"]
     return render_template('description_layout.html',title = "Project Expo",
