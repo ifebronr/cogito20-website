@@ -52,7 +52,7 @@ def paperPresenation():
     date = "5th March ,2020"
     time = "Schedule will be announced on 1st March,2020"
     description = "Paper Presentation is an event that gives budding researchers an opportunity to present their ideas and research and bring out their insights about a topic in front of an esteemed panel of judges."
-
+    link = "https://forms.gle/QsvJh2mLoE9KQ9hq8"
     rules = [ "> 	Team Members - 2 to 4." ,
               "> 	Abstract submission latest by 1st of March.",
               "> 	Time Constraint for each Team - 5 to 7 mins.", 
@@ -76,7 +76,8 @@ def paperPresenation():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link = link
                            )
 @app.route('/projectExpo')
 def projectExpo():
@@ -86,7 +87,7 @@ def projectExpo():
     date = "6th March ,2020"
     time = "Schedule will be announced on 1st March,2020"
     description = "Cogito-20 is bringing Project Expo to all the aspiring Engineers and Developers who are looking for a platform to showcase their ideas/dreams in front of an esteemed panel of established innovators, inventors and ideators. So come on and showcase your best ideas at Cogito-20."
-
+    link = "https://forms.gle/9yBNpZeErshVTpCb6"
     rules = [ "> 	This competition is open to all departments except (MechanicalEngineering, AeroSpace Engineering and Civil Engineering.)" ,
               "> 	Any institute/college can send any number of entries." ,
               "> 	Project can be in the form of a working model |software |simulation based | industry sponsored | experiments | prototype.",
@@ -105,7 +106,8 @@ def projectExpo():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link = link
                            )
 @app.route('/rosieTheProgrammer')
 def rosieTheProgrammer(): 
@@ -115,7 +117,7 @@ def rosieTheProgrammer():
     date = "5th March ,2020"
     time = "Schedule will be announced on 1st March,2020"
     description = "Wogrammer is an onsite programming contest specially to encourage women interested in Competitive Programming organised by CSI STUDENT BRANCH for COGITO-2020. Wogrammer is an event in which the brightest women across the nation compete against each other to solve algorithmic problems."
-
+    link = "https://forms.gle/QQK1matEetZA7XGbA"
     rules = [ "> 	This is a solo event only for women" ,
               "> 	Registration for the event closes 30 mins prior to the event." ,
               "> 	Registered Participants must be present in the venue at least 10 minutes before the start of the event.",
@@ -135,7 +137,8 @@ def rosieTheProgrammer():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link = link
                            )
 @app.route('/procoding')
 def procoding():
@@ -145,7 +148,7 @@ def procoding():
     date = "5th March ,2020"
     time = "Schedule will be announced on 1st March,2020"
     description = "Pro Coding is an onsite event where some of the enthusiastic coders compete against each other to solve some challenges. These challenges will test your basic and advanced coding skills."
-
+    link = "https://forms.gle/RC22JxYhvq4EAPUr6"
     rules = [ "> 	This is a solo event" ,
               "> 	Registration for the event closes 30 mins prior to the event." ,
               "> 	Registered Participants must be present in the venue at least 15 minutes before the start of the event.",
@@ -157,7 +160,7 @@ def procoding():
               "> 	Prilims might be there",
               
             ]
-    contacts = ["Deepan | 638O3 O87O1", "Saravanan | abpsaravanan22@gmail.com ","VARUN | 89390 06706"]
+    contacts = ["Deepan | +91 638O3 O87O1", "Saravanan A P | +91 99626 97951 ","Varun| +91 89390 06706"]
 
     return render_template('description_layout.html',title = "Procoding",
                             eventType = "WS",
@@ -168,7 +171,8 @@ def procoding():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link =  link
                            )
 @app.route('/blindCoding')
 def blindCoding():
@@ -178,7 +182,7 @@ def blindCoding():
     date = "6th March ,2020"
     time = "Schedule will be announced on 1st March,2020"
     description = "A fun event spanning over two rounds, Blind Coding is a coding challenge with a twist.It is a fresh and offbeat concept - where the participants need to write and compile their program with the monitor screens switched off."
-
+    link = "https://forms.gle/2pPGkWdqMgPpAsw8A"
     rules = [ "> 	The participants will be given 3 problems of varying difficulty levels" ,
               "> 	Registration for the event closes 30 mins prior to the event." ,
               "> 	Registered Participants must be present in the venue at least 15 minutes before the start of the event.",
@@ -190,7 +194,7 @@ def blindCoding():
               "> 	Prilims might be there",
               
             ]
-    contacts = ["Deepan | 638O3 O87O1", "Saravanan | abpsaravanan22@gmail.com ","Varun | 89390 06706"]
+    contacts = ["Abishek | +91 93446 31494 ", "P.Soumiya | +91 78249 26317","VS.Yahzhini | 99426 28171"]
 
     return render_template('description_layout.html',title = "Blind Coding",
                             eventType = "WS",
@@ -201,7 +205,8 @@ def blindCoding():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link = link
                            )
 @app.route('/switcheroo')
 def switcheroo():
@@ -211,7 +216,7 @@ def switcheroo():
     date = "5th March ,2020"
     time = "Schedule will be announced on 1st March,2020"
     description = "Switcheroo is not just regular coding competition, this event not only tests your programming skills as an individual but also how efficiently you can coordinate with your teammate under tense situation."
-
+    link = "https://forms.gle/DJhFHS6gTLzDY5rZ9"
     rules = [ "> 	Teams size: 2 members" ,
               "> 	Member of the team will be seated in different rooms. They will be given different sets of questions to code." ,
               "> 	Periodically, members of the team will switch their positions, i.e, switch their PCs so that the first team member completes the code of their partner. Same follows for the second team member.",
@@ -234,7 +239,8 @@ def switcheroo():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link = link
                            )
 
 
@@ -246,7 +252,7 @@ def hackCon():
     date = "5th March ,2020"
     time = "Schedule will be announced on 1st March,2020"
     description = "Its an Online Hacking tournament"
-
+    link = " https://forms.gle/5fokNaFDcxJNjEsAA"
     rules = [ "> 	It's strictly forbidden to perform any kind of Denial of Service Attack (DoS/DDoS) against the servers or the competition's infrastructure" ,
               "> 	Do NOT try to use Brute Force on the flag submission system because the flags are not possible to guess" ,
               "> 	Do NOT try to exchange flags or write-ups during the competition",
@@ -269,7 +275,8 @@ def hackCon():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link = link
                            )
 @app.route('/BTP')
 def BTP():
@@ -279,7 +286,7 @@ def BTP():
     date = "6th March ,2020"
     time = "Schedule will be announced on 1st March,2020"
     description = "As women’s day is coming closer Cogito-20 Team wants to celebrate the equality between men & women and wants to break the stereotypes in the IT sector by promoting a healthy competition between all the programmers and Wogrammers, who aspire to be future IT enthusiasts."
-
+    link = "https://forms.gle/mJssUiZB3au7hhi5A"
     rules = [ "> 	Team of 2 (consisting of either 2 men or 2 women)." ,
               "> 	Teams will be given programming questions of varying difficulties." ,
               "> 	The team that scores the highest points wins",
@@ -297,7 +304,8 @@ def BTP():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link = link
                            )
     
 @app.route('/treasureTrove')
@@ -308,7 +316,7 @@ def tresureTrove():
     date = "5th March ,2020"
     time = "Schedule will be announced on 1st March,2020"
     description = "The game is simple, clues will be hidden around the college and the first clue will be given to the teams , the teams need to find the clues and using the clues the teams need to complete the code within the stipulated time."
-
+    link = "https://forms.gle/E3mmRGxsV5DadJy6A"
     rules = [ "> 	Team Size: 2 - 3." ,
               "> 	Code the given problem statement in the stipulated time." ,
               "> 	Submit the correct answer in the given platform.",
@@ -325,7 +333,8 @@ def tresureTrove():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link = link
                            )
     
 
@@ -362,7 +371,7 @@ def googleIT():
     date = "6th March ,2020"
     time = "Schedule will be announced on 1st March,2020"
     description = "You’ll be given a doodle from Doodles from Google in a piece of paper. Teams need to find out the year and the reason why the particular doodle was made."
-
+    link = "https://forms.gle/Sb3Kt3tmh4mxg5Wy9"
     rules = [ "> 	Team Size: 1 - 2." ,
               "> 	We will provide a system to find the solutions." ,
               "> 	Don't share the answer with other's.",
@@ -383,7 +392,8 @@ def googleIT():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link = link
                            )
 @app.route('/ZPT')
 def ZPT():
@@ -393,7 +403,7 @@ def ZPT():
     date = "6th March ,2020"
     time = "Schedule will be announced on 1st March,2020"
     description = "It is a fun event where you’ll be tested on your knowledge grasping abilities. You’ll be handed a set of documents which you’ll be using to solve a set of problems."
-
+    link = "https://forms.gle/RYK94hBaeP58EW3aA"
     rules = [ "> 	Team Size: 1 - 2." ,
               "> 	Participants must register at least 30 mins prior to the start of the event." ,
               "> 	Participants must be present at the venue at least 15 mins prior to the start of the event.",
@@ -412,7 +422,8 @@ def ZPT():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link = link 
                            )
 @app.route('/improvBattle')
 def improvBattle():
@@ -422,7 +433,7 @@ def improvBattle():
     date = "?6th March ,2020"
     time = "Schedule will be announced on 1st March,2020"
     description = "Supporting the cliche that engineers can adapt,overcome and  improvise in any situation.Cogito 20 is bringing an improv battle to all the aspiring improv ‘ers, it's a  team based event where the teams will be given different situations / constraints asked from the audience and the teams need perform based on these constraints."
-
+    link = "https://forms.gle/Y427xuzR1vvpXtej8"
     rules = [ "> 	Team Size: 4" ,
               "> 	Carry valid College IDs for registration." ,
               "> 	Language: Tamil, or English.",
@@ -439,7 +450,8 @@ def improvBattle():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link = link
                            )
 @app.route('/adzap')
 def adzap():
@@ -449,7 +461,7 @@ def adzap():
     date = "5th March ,2020"
     time = "Schedule will be announced on 1st March,2020"
     description = "Adzap is set to bring out the creativity, time management, marketing skills of the innovative minds and to shape their team spirit and coordination. Each team must have a captain who can get in touch with the coordinators of the event. Once the topic is given, the teams can start with their discussion in the venue. The captains will be called to pick a chit from the lot and their team will perform in that order."
-
+    link = "https://forms.gle/SBhXCPgmod436Nq1A"
     rules = [ "> 	Team Size: 4 - 6" ,
               "> 	Preparation Time : 30 minutes" ,
               "> 	Preformance Time : 3 - 5 minutes (above or below the duration will result in -1 point for every 30 seconds)" ,
@@ -467,7 +479,8 @@ def adzap():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link = link
                            )
 @app.route('/geekSquad')
 def geekSquad():
@@ -477,7 +490,7 @@ def geekSquad():
     date = "6th March ,2020"
     time = "Schedule will be announced on 1st March,2020"
     description = "Do you think you know all about tech? Do you think you’re the one above all geeks? Come participate in Geek Squad to show your inquisition about Tech!"
-    
+    link = "https://forms.gle/yzgmTq16zGDZmzn56"
     rules = [ ">	Team size - 2 to 4." ,
               "> 	There would be 2 rounds.",
               ">    First round, prelims - For every correct answer you get +1 point. You get +2 points for answers with 2 parts.", 
@@ -498,7 +511,7 @@ def geekSquad():
 @app.route('/UI&UX-Design')
 def uiUxDesign():
 
-    psFile = "dist/workshop-posters/UX-UI-Workshop.png"
+    psFile = "dist/workshop-posters/UX-UI-Workshop.jpg"
     wsAlt = "UI & UX Workshop"
     name = "UI & UX Design workshop"
     date = "5th March ,2020"
@@ -508,6 +521,7 @@ def uiUxDesign():
               "> 	Each attendee should bring their own Laptop.",
               ">    There will be no refund of money once paid.", 
               "> 	Please carry your college IDs."]
+    link = "https://forms.gle/bkH3SHJQh7w5iKoL9"
     contacts = ["Sanjay Kumar | +91 99419 10062","Calvin Kumar | +91 99403 09162"]
     return render_template('description_layout.html',title = "UI & UX Design",
                             eventType = "WS",
@@ -518,7 +532,8 @@ def uiUxDesign():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link = link 
                            )
                     
 @app.route('/TensorflowWorkshop')
@@ -535,7 +550,7 @@ def tensorWorkshop():
               ">    There will be no refund of money once paid.", 
               "> 	Please carry your college IDs."]
     contacts = ["Febron Rodriguez | +91 9953072714","V Balaji | +91 81245 44723"]
-    link = "ff"
+    link = "https://forms.gle/iFd7sXp3dx46EVch7"
     return render_template('description_layout.html',title = "UI & UX Design",
                             eventType = "WS",
                             psFile = psFile,
@@ -546,6 +561,7 @@ def tensorWorkshop():
                             rules = rules,
                             contacts = contacts,
                             description = description,
+                            link = link
                             
                            )
 

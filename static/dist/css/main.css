@@ -15,6 +15,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+.ticket-btn {
+  margin: 1rem 0;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: #000;
+  background-color: #E6FF00;
+}
+
 .container-90 {
   width: 90%;
   margin: auto;
@@ -39,6 +47,16 @@ h1, h2, h3, h4, h5, h6 {
 .bold {
   font-weight: 700;
   font-size: 3rem;
+}
+
+.para {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .para {
+    font-size: 1.2rem;
+  }
 }
 
 .gray {
@@ -547,6 +565,36 @@ a:hover {
   }
 }
 
+.ticket__content {
+  margin: 4rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .ticket__content {
+    margin: 6rem auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (min-width: 1000px) {
+  .ticket__about {
+    margin: 20% 0;
+  }
+}
+
 .events {
   text-align: center;
   background-color: #212121;
@@ -561,6 +609,7 @@ a:hover {
 .workshops {
   color: #fff;
   background-color: #212121;
+  text-align: center;
 }
 
 .workshops-wrapper {
