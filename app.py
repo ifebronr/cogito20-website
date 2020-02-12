@@ -70,7 +70,7 @@ def paperPresenation():
             ]
     contacts = ["Rohini | +91 98406 68223", "Pooja priyadarshni | +91 98417 59321", "E.S.Vikashini sruthi | +91 96000 98232"]
     return render_template('description_layout.html',title = "Paper Presentation",
-                            eventType = "WS",
+                            eventType = "E",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -102,7 +102,7 @@ def projectExpo():
             ]
     contacts = ["Shasanth | +91 96771 83202", "Deepak Sharran  | +91 74180 23612", "Manoj Kumar | +91 73585 17185"]
     return render_template('description_layout.html',title = "Project Expo",
-                            eventType = "WS",
+                            eventType = "E",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -133,7 +133,7 @@ def rosieTheProgrammer():
             ]
     contacts = ["Vaishanavi | +91 96191 92657", "Mansy | +91 7397669094"]
     return render_template('description_layout.html',title = "Rosie the Wrogrammer",
-                            eventType = "WS",
+                            eventType = "E",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -167,7 +167,7 @@ def procoding():
     contacts = ["Deepan | +91 638O3 O87O1", "Saravanan A P | +91 99626 97951 ","Varun| +91 89390 06706"]
 
     return render_template('description_layout.html',title = "Procoding",
-                            eventType = "WS",
+                            eventType = "E",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -201,7 +201,7 @@ def blindCoding():
     contacts = ["Abishek | +91 93446 31494 ", "P.Soumiya | +91 78249 26317","VS.Yahzhini | 99426 28171"]
 
     return render_template('description_layout.html',title = "Blind Coding",
-                            eventType = "WS",
+                            eventType = "E",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -235,7 +235,7 @@ def switcheroo():
     contacts = ["Joseph Dave | +91 87544 01014"]
 
     return render_template('description_layout.html',title = "Switchroo",
-                            eventType = "WS",
+                            eventType = "E",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -271,7 +271,7 @@ def hackCon():
     contacts = ["V Balaji | +91 81245 44723","Bharat | +91 78714 34120"]
 
     return render_template('description_layout.html',title = "HackCon(Online)",
-                            eventType = "WS",
+                            eventType = "E",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -300,7 +300,7 @@ def BTP():
     contacts = ["Angeline | +91 95971 05608","Vasundhara | 9176964372"]
 
     return render_template('description_layout.html',title = "Breaking the Patriarchy",
-                            eventType = "WS",
+                            eventType = "E",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -329,7 +329,7 @@ def tresureTrove():
     contacts = ["M S Nishaanth  | +91 73582 72962","Kishoreganesh S | +91 63799 54718","Jayanth | +91 97906 81711"]
 
     return render_template('description_layout.html',title = "Teasure Trove",
-                            eventType = "WS",
+                            eventType = "E",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -388,7 +388,7 @@ def googleIT():
     contacts = ["Seshathiri | +91 80727 71522","Kevin Lyton | +91 99944 54031","Jamal Mohamed shaul | +91 97907 27121"]
 
     return render_template('description_layout.html',title = "Google It",
-                            eventType = "WS",
+                            eventType = "E",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -418,7 +418,7 @@ def ZPT():
     contacts = ["M S Nishaanth  | +91 73582 72962","Kishoreganesh S | +91 63799 54718","Jayanth | +91 97906 81711"]
 
     return render_template('description_layout.html',title = "Zero Prerequisite Tournament",
-                            eventType = "WS",
+                            eventType = "E",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -446,7 +446,7 @@ def improvBattle():
             ]
     contacts = ["Joseph Dave | +91 87544 01014"]
     return render_template('description_layout.html',title = "The Improv Battle",
-                            eventType = "WS",
+                            eventType = "E",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -475,7 +475,7 @@ def adzap():
             ]
     contacts = ["Ishana | +91 88259 25157 "]
     return render_template('description_layout.html',title = "Adzap",
-                            eventType = "WS",
+                            eventType = "E",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -501,7 +501,7 @@ def geekSquad():
               "> 	Final round - For every bounce (First team to shout the answer) if the bounce is correct you get +10 points. If not -10 points."]
     contacts = ["Sanjay Kumar | +91 99419 10062","Calvin Kumar | +91 99403 09162"]
     return render_template('description_layout.html',title = "Geeksquad",
-                            eventType = "WS",
+                            eventType = "E",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -573,7 +573,7 @@ def tensorWorkshop():
 def schedule():
     return render_template('schedules.html',title = "Schedule")
 
-
+"""=CONCATENATE(TEXT(TIME(8,COLUMN(A3)*30-30,0),"H:MM AM/PM"), "-" ,TEXT(TIME(8,COLUMN(A3)*30,0),"H:MM AM/PM"))"""
 
 
 
