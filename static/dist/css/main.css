@@ -68,6 +68,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3rem;
 }
 
+.hbold {
+  font-weight: 700;
+}
+
 .para {
   font-weight: 500;
 }
@@ -643,6 +647,24 @@ a:hover {
 
 .contact__map {
   margin: 2rem 0;
+}
+
+.contact .dates {
+  margin: 1rem 0;
+}
+
+@media (min-width: 1000px) {
+  .contact__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact__map {
+    width: 60%;
+  }
+  .contact .dates {
+    margin: 2rem 2rem;
+  }
 }
 
 /* Schedules */
