@@ -5,12 +5,15 @@
                     <div class="ws__poster"><img src="{{url_for('static', filename=psFile)}}" alt="{{wsAlt}}" class="responsive-img"></div> 
                     <div class="details">
                         <h1>{{name}}</h1>
-                        <h6>Date:   {{date}}</h6>
-                        <h6>Time:   {{time}}</h6>
+                        <h6 class="ptb-4">Date:   {{date}}</h6>
+                        <h6 class="ptb-4">Time:   {{time}}</h6>
                         <h3>Description</h3>
                         <p>{{description}}</p>
                         {%if eventType == "E"%}
                         <h3>Eligibility: Cogito Entry Ticket</h3>
+                        {%endif%}
+                        {%if eventType == "O"%}
+                        <h3>Online Events are Free</h3>
                         {%endif%}
                         {%if eventType == "WS"%}
                         <h3>Cost : ₹300</h3>

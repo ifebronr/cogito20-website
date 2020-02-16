@@ -271,7 +271,7 @@ def hackCon():
     contacts = ["V Balaji | +91 81245 44723","Bharat | +91 78714 34120"]
 
     return render_template('description_layout.html',title = "HackCon(Online)",
-                            eventType = "E",
+                            eventType = "O",
                             psFile = psFile,
                             wsAlt = wsAlt,
                             name = name,
@@ -346,19 +346,21 @@ def tresureTrove():
 
 @app.route('/Non-Technical-Events')
 def nonTechEvents():
-    noOf = 5
+    noOf = 6
     events = ["googleIT",
               "ZPT",
               "improvBattle",
               "adzap",
-              "geekSquad"
+              "geekSquad",
+              "FMS"
              ]
 
     psFile = ["dist/event-posters/Google-It.jpg",
               "dist/event-posters/zpt.jpg",
               "dist/event-posters/TheImprovBattle.jpg",
               "dist/event-posters/Adzap.jpg",
-              "dist/event-posters/Geeks.jpg"
+              "dist/event-posters/Geeks.jpg",
+              "dist/event-posters/FMS.jpg"
               ]
     
     return render_template('event-list-layout.html',title = "Non-Technical Events",
@@ -509,8 +511,47 @@ def geekSquad():
                             time = time,
                             rules = rules,
                             contacts = contacts,
-                            description = description
+                            description = description,
+                            link = link
                            )
+@app.route('/FMS')
+def FMS():
+    psFile = "dist/event-posters/FMS.jpg"
+    wsAlt = "Flutter Me Shutters"
+    name = "Flutter Me Shutters(online)"
+    date = "Its already started start send your amazing pictures to us!!"
+    time = "NA"
+    description = "Flutter Me Shutters  is a National Level Photography competition, For details visit our Instagram page "
+    link = "https://www.instagram.com/cogito_2020/"
+    rules = [ ">	For every like you get one vote" ,
+              "> 	Photos can be DM'ed to @cogito_2020 on Instagram or Email it to us at cogito.jeccsi@gmail.com ",
+              ">    For you vote to count the participant must follow the @cogito_2020 on Instagram", 
+              ">    Last date to vote is 1st of March,2020", 
+              ">    Participants are advised to use #cogito20", 
+              "> 	Results will be announced on 5th March ,2020 "]
+    contacts = ["Saradha | +91 94458 76310"]
+    return render_template('description_layout.html',title = "Flutter Me Shutters",
+                            eventType = "O",
+                            psFile = psFile,
+                            wsAlt = wsAlt,
+                            name = name,
+                            date = date,
+                            time = time,
+                            rules = rules,
+                            contacts = contacts,
+                            description = description,
+                            link = link
+                           )
+
+
+
+
+
+
+
+
+
+
 
 @app.route('/UI&UX-Design')
 def uiUxDesign():
