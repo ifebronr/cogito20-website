@@ -566,7 +566,7 @@ def uiUxDesign():
               "> 	Each attendee should bring their own Laptop.",
               ">    There will be no refund of money once paid.", 
               "> 	Please carry your college IDs."]
-    link = "https://forms.gle/bkH3SHJQh7w5iKoL9"
+    link = "https://forms.gle/R1x5NN9Ct5ohWrP28"
     contacts = ["Sanjay Kumar | +91 99419 10062","Calvin Kumar | +91 99403 09162"]
     return render_template('description_layout.html',title = "UI & UX Design",
                             eventType = "WS",
@@ -595,7 +595,7 @@ def tensorWorkshop():
               ">    There will be no refund of money once paid.", 
               "> 	Please carry your college IDs."]
     contacts = ["Febron Rodriguez | +91 9953072714","V Balaji | +91 81245 44723"]
-    link = "https://forms.gle/iFd7sXp3dx46EVch7"
+    link = "https://forms.gle/R1x5NN9Ct5ohWrP28"
     return render_template('description_layout.html',title = "UI & UX Design",
                             eventType = "WS",
                             psFile = psFile,
