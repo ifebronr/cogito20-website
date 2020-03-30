@@ -59,6 +59,7 @@
                     <li class="nav__list-item"><a href="/home#ticket" class="hover-target">Buy Ticket</a></li>
                     <li class="nav__list-item"><a href="/home#events" class="hover-target">Events</a></li>
                     <li class="nav__list-item"><a href="{{url_for('schedule')}}" class="hover-target">Schedule</a></li>
+                    <li class="nav__list-item"><a href="{{url_for('team')}}" class="hover-target">Team</a></li>
                 </ul>
             </div>
         </div>
@@ -99,6 +100,7 @@
               <h5 class="black-text ptb-16">Sitemap</h5>
               <ul class=" padding-4">
                 <li><a class="grey-text text-lighten-3" href="{{url_for('schedule')}}">Schedule</a></li>
+                <li><a class="grey-text text-lighten-3" href="{{url_for('team')}}">Team</a></li>
                 <!--<li><a class="grey-text text-lighten-3" href="{{url_for('team')}}">Team</a></li>-->
               </ul>
             </div>                   
@@ -116,5 +118,6 @@
         console.log('callback - particles.js config loaded');
       });</script>
     <script src="{{url_for('static', filename='js/main.js')}}"></script>  
+ 
 </body>
 </html>

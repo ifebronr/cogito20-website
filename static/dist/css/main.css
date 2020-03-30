@@ -42,11 +42,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #E6FF00;
 }
 
-.container-90 {
-  width: 90%;
-  margin: auto;
-}
-
 .container-70 {
   width: 90%;
   margin: auto;
@@ -100,6 +95,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .ptb-16 {
   padding: 16px 0;
+}
+
+.ptb-16 {
+  padding: 16px 0;
+}
+
+.pad-2rem {
+  padding: 2rem;
 }
 
 .mtb-2rem {
@@ -763,5 +766,17 @@ a:hover {
 
 .technical-events__wrapper h1 {
   font-size: 3rem;
+}
+
+/* Team */
+.team {
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.team__wrapper {
+  margin-top: 20vh;
 }
 /*# sourceMappingURL=main.css.map */

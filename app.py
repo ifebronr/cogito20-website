@@ -2,9 +2,14 @@ from flask import Flask ,render_template
 app = Flask(__name__)
 
 @app.route('/')
+@app.route('/cog21')
+def cog21():
+    return render_template('cog21.html')
 @app.route('/home')
 def home():
     return render_template('home.html')
+
+
 
 @app.route('/contact')
 def contact():
